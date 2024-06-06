@@ -11,7 +11,16 @@ import SwiftUI
 struct PadelScore_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Image("background", bundle: .main)
+                    .resizable()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .scaledToFill()
+                
+                NavigationStack {
+                    StartView()
+                }
+            }.edgesIgnoringSafeArea(.all)
         }
     }
 }

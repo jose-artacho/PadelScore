@@ -7,44 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F479AB062C10829400B42478 /* PadelScore Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F479AB052C10829400B42478 /* PadelScore Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F479AB0B2C10829400B42478 /* PadelScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479AB0A2C10829400B42478 /* PadelScoreApp.swift */; };
-		F479AB0D2C10829400B42478 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479AB0C2C10829400B42478 /* ContentView.swift */; };
+		F479AB0D2C10829400B42478 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F479AB0C2C10829400B42478 /* StartView.swift */; };
 		F479AB0F2C10829600B42478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F479AB0E2C10829600B42478 /* Assets.xcassets */; };
 		F479AB122C10829600B42478 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F479AB112C10829600B42478 /* Preview Assets.xcassets */; };
+		F4A3625F2C11C491001E5A4D /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3625E2C11C491001E5A4D /* ConfigView.swift */; };
+		F4A362612C11F148001E5A4D /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A362602C11F148001E5A4D /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F479AB072C10829400B42478 /* PBXContainerItemProxy */ = {
+		F4861DBF2C109F9700BB533E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F479AAF92C10829400B42478 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F479AB042C10829400B42478;
-			remoteInfo = "PadelScore Watch App";
+			remoteGlobalIDString = F479AAFE2C10829400B42478;
+			remoteInfo = PadelScore;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F479AB182C10829600B42478 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				F479AB062C10829400B42478 /* PadelScore Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		F479AAFF2C10829400B42478 /* PadelScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PadelScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F479AB052C10829400B42478 /* PadelScore Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PadelScore Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F479AB0A2C10829400B42478 /* PadelScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadelScoreApp.swift; sourceTree = "<group>"; };
-		F479AB0C2C10829400B42478 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F479AB0C2C10829400B42478 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		F479AB0E2C10829600B42478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F479AB112C10829600B42478 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4861DBA2C109F8600BB533E /* PadelScore-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PadelScore-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F4A3625E2C11C491001E5A4D /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		F4A362602C11F148001E5A4D /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,13 +52,13 @@
 			children = (
 				F479AB092C10829400B42478 /* PadelScore Watch App */,
 				F479AB002C10829400B42478 /* Products */,
+				F4861DBB2C109F8F00BB533E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F479AB002C10829400B42478 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F479AAFF2C10829400B42478 /* PadelScore.app */,
 				F479AB052C10829400B42478 /* PadelScore Watch App.app */,
 			);
 			name = Products;
@@ -78,10 +67,11 @@
 		F479AB092C10829400B42478 /* PadelScore Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				F479AB0A2C10829400B42478 /* PadelScoreApp.swift */,
-				F479AB0C2C10829400B42478 /* ContentView.swift */,
 				F479AB0E2C10829600B42478 /* Assets.xcassets */,
+				F4861DBA2C109F8600BB533E /* PadelScore-Watch-App-Info.plist */,
+				F479AB0A2C10829400B42478 /* PadelScoreApp.swift */,
 				F479AB102C10829600B42478 /* Preview Content */,
+				F4A3625D2C11AAF1001E5A4D /* Scenes */,
 			);
 			path = "PadelScore Watch App";
 			sourceTree = "<group>";
@@ -94,26 +84,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F4861DBB2C109F8F00BB533E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4A3625D2C11AAF1001E5A4D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F479AB0C2C10829400B42478 /* StartView.swift */,
+				F4A3625E2C11C491001E5A4D /* ConfigView.swift */,
+				F4A362602C11F148001E5A4D /* ScoreView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F479AAFE2C10829400B42478 /* PadelScore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F479AB192C10829600B42478 /* Build configuration list for PBXNativeTarget "PadelScore" */;
-			buildPhases = (
-				F479AAFD2C10829400B42478 /* Resources */,
-				F479AB182C10829600B42478 /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F479AB082C10829400B42478 /* PBXTargetDependency */,
-			);
-			name = PadelScore;
-			productName = PadelScore;
-			productReference = F479AAFF2C10829400B42478 /* PadelScore.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
 		F479AB042C10829400B42478 /* PadelScore Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F479AB152C10829600B42478 /* Build configuration list for PBXNativeTarget "PadelScore Watch App" */;
@@ -125,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F4861DC02C109F9700BB533E /* PBXTargetDependency */,
 			);
 			name = "PadelScore Watch App";
 			productName = "PadelScore Watch App";
@@ -141,9 +132,6 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					F479AAFE2C10829400B42478 = {
-						CreatedOnToolsVersion = 15.3;
-					};
 					F479AB042C10829400B42478 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -162,20 +150,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F479AAFE2C10829400B42478 /* PadelScore */,
 				F479AB042C10829400B42478 /* PadelScore Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F479AAFD2C10829400B42478 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F479AB032C10829400B42478 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F479AB0D2C10829400B42478 /* ContentView.swift in Sources */,
+				F4A3625F2C11C491001E5A4D /* ConfigView.swift in Sources */,
+				F4A362612C11F148001E5A4D /* ScoreView.swift in Sources */,
+				F479AB0D2C10829400B42478 /* StartView.swift in Sources */,
 				F479AB0B2C10829400B42478 /* PadelScoreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,10 +182,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F479AB082C10829400B42478 /* PBXTargetDependency */ = {
+		F4861DC02C109F9700BB533E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F479AB042C10829400B42478 /* PadelScore Watch App */;
-			targetProxy = F479AB072C10829400B42478 /* PBXContainerItemProxy */;
+			targetProxy = F4861DBF2C109F9700BB533E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -266,6 +247,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -319,6 +301,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -333,6 +316,7 @@
 				DEVELOPMENT_TEAM = AJ2X5QULJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PadelScore-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PadelScore;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -345,10 +329,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -363,6 +348,7 @@
 				DEVELOPMENT_TEAM = AJ2X5QULJ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PadelScore-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = PadelScore;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -375,44 +361,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
-			};
-			name = Release;
-		};
-		F479AB1A2C10829600B42478 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AJ2X5QULJ8;
-				INFOPLIST_KEY_CFBundleDisplayName = PadelScore;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arttachdevs.PadelScore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		F479AB1B2C10829600B42478 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AJ2X5QULJ8;
-				INFOPLIST_KEY_CFBundleDisplayName = PadelScore;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arttachdevs.PadelScore;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -433,15 +387,6 @@
 			buildConfigurations = (
 				F479AB162C10829600B42478 /* Debug */,
 				F479AB172C10829600B42478 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F479AB192C10829600B42478 /* Build configuration list for PBXNativeTarget "PadelScore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F479AB1A2C10829600B42478 /* Debug */,
-				F479AB1B2C10829600B42478 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
