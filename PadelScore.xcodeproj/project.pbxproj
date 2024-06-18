@@ -13,6 +13,7 @@
 		F479AB122C10829600B42478 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F479AB112C10829600B42478 /* Preview Assets.xcassets */; };
 		F4A3625F2C11C491001E5A4D /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3625E2C11C491001E5A4D /* ConfigView.swift */; };
 		F4A362612C11F148001E5A4D /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A362602C11F148001E5A4D /* ScoreView.swift */; };
+		F4C191D32C170E3F009C60F9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C191D22C170E3F009C60F9 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		F4861DBA2C109F8600BB533E /* PadelScore-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PadelScore-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F4A3625E2C11C491001E5A4D /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		F4A362602C11F148001E5A4D /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F4C191D22C170E3F009C60F9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +96,28 @@
 		F4A3625D2C11AAF1001E5A4D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F4C191CE2C16F81E009C60F9 /* ScoreView */,
 				F479AB0C2C10829400B42478 /* StartView.swift */,
 				F4A3625E2C11C491001E5A4D /* ConfigView.swift */,
-				F4A362602C11F148001E5A4D /* ScoreView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F4C191CE2C16F81E009C60F9 /* ScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C191D12C170E23009C60F9 /* Entities */,
+				F4A362602C11F148001E5A4D /* ScoreView.swift */,
+			);
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		F4C191D12C170E23009C60F9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F4C191D22C170E3F009C60F9 /* Team.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C191D32C170E3F009C60F9 /* Team.swift in Sources */,
 				F4A3625F2C11C491001E5A4D /* ConfigView.swift in Sources */,
 				F4A362612C11F148001E5A4D /* ScoreView.swift in Sources */,
 				F479AB0D2C10829400B42478 /* StartView.swift in Sources */,
